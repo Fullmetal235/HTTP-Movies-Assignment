@@ -48,7 +48,7 @@ const updateForm = props => {
               name="title"
               onChange={changeHandler}
               placeholder="title"
-              value={item.title}
+              value={movie.title}
             />
             <div className="baseline" />
     
@@ -57,7 +57,7 @@ const updateForm = props => {
               name="director"
               onChange={changeHandler}
               placeholder="director"
-              value={item.director}
+              value={movie.director}
             />
             <div className="baseline" />
     
@@ -66,7 +66,7 @@ const updateForm = props => {
               name="metascore"
               onChange={changeHandler}
               placeholder="Image"
-              value={item.metascore}
+              value={movie.metascore}
             />
             <div className="baseline" />
     
@@ -75,18 +75,11 @@ const updateForm = props => {
               name="stars"
               onChange={changeHandler}
               placeholder="stars"
-              value={item.stars}
+              value={movie.stars}
             />
             <div className="baseline" />
     
-            <input
-              type="string"
-              name="shipping"
-              onChange={changeHandler}
-              placeholder="Shipping"
-              value={item.shipping}
-            />
-            <div className="baseline" />
+
     
             <button className="md-button form-button">Update</button>
           </form>
