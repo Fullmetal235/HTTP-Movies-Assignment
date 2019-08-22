@@ -45,37 +45,37 @@ const updateForm = props => {
           <form onSubmit={handleSubmit}>
             <input
               type="text"
-              name="name"
+              name="title"
               onChange={changeHandler}
-              placeholder="name"
-              value={item.name}
+              placeholder="title"
+              value={item.title}
+            />
+            <div className="baseline" />
+    
+            <input
+              type="text"
+              name="director"
+              onChange={changeHandler}
+              placeholder="director"
+              value={item.director}
             />
             <div className="baseline" />
     
             <input
               type="number"
-              name="price"
-              onChange={changeHandler}
-              placeholder="Price"
-              value={item.price}
-            />
-            <div className="baseline" />
-    
-            <input
-              type="string"
-              name="imageUrl"
+              name="metascore"
               onChange={changeHandler}
               placeholder="Image"
-              value={item.imageUrl}
+              value={item.metascore}
             />
             <div className="baseline" />
     
             <input
-              type="string"
-              name="description"
+              type="text"
+              name="stars"
               onChange={changeHandler}
-              placeholder="Description"
-              value={item.description}
+              placeholder="stars"
+              value={item.stars}
             />
             <div className="baseline" />
     
